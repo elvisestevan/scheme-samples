@@ -1,0 +1,29 @@
+Exercise 1.1
+10
+12
+8
+3
+6
+19
+#f
+3
+16
+6
+16
+
+Exercise 1.2
+( / (+ (+ 5 4) ( - 2 (- 3 ( + 6 (/ 4 5 ))))) (* (* 3 ( - 6 2)) (- 2 7)))
+
+Exercise 1.3
+(define (sum-of-squares-two-largers x y z)
+	(if (< x y)
+	    (if (< x z)
+	        (sum-of-squares y z)
+	        (sum-of-squares x y)
+	    )
+	   (if (> y z)
+	       (sum-of-squares x y)
+	       (sum-of-squares x z)
+	   )
+	)
+)
